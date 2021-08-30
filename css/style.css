@@ -160,6 +160,12 @@ body {
   margin: 88px 24px;
 }
 
+@media (min-width: 64em) {
+  .container {
+    margin: 177px 165px;
+  }
+}
+
 .card {
   background-color: #1b1938;
   max-width: 327px;
@@ -168,11 +174,31 @@ body {
   overflow: hidden;
 }
 
+@media (min-width: 64em) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1110px;
+    text-align: left;
+  }
+}
+
 .card__img {
   position: relative;
   background-color: #aa5cdb;
   min-height: 240px;
   margin-bottom: 40px;
+}
+
+@media (min-width: 64em) {
+  .card__img {
+    min-width: 540px;
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .card__img::before {
@@ -195,30 +221,71 @@ body {
   margin: 40px 32px 32px 32px;
 }
 
+@media (min-width: 64em) {
+  .card__info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 72px 95px 59px 72px;
+  }
+}
+
 .card__headline {
   font-size: 28px;
   font-weight: 700;
   color: white;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .card__headline span {
   color: #aa5cdb;
 }
 
+@media (min-width: 64em) {
+  .card__headline {
+    font-size: 36px;
+    margin-bottom: 25px;
+    line-height: 44px;
+  }
+}
+
 .card__text {
   color: rgba(255, 255, 255, 0.75);
   font-size: 15px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   line-height: 25px;
+}
+
+@media (min-width: 64em) {
+  .card__text {
+    margin-bottom: 72px;
+    margin-right: 30px;
+  }
 }
 
 .card__stats {
   color: white;
 }
 
+@media (min-width: 64em) {
+  .card__stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .card__stat:not(:last-of-type) {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 64em) {
+  .card__stat {
+    margin-right: 61px;
+  }
+  .card__stat:not(:last-of-type) {
+    margin-bottom: 0;
+  }
 }
 
 .card__statNum {
@@ -233,5 +300,11 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+@media (min-width: 64em) {
+  .card__statHeading {
+    font-family: "Lexend Deca", sans-serif;
+  }
 }
 /*# sourceMappingURL=style.css.map */

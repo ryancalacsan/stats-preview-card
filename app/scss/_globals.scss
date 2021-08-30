@@ -20,4 +20,8 @@ body {
 
 .container {
     margin: 88px 24px;
+
+    @include breakpoint-up(large) {
+        margin: 177px 165px;
+    }
 }
