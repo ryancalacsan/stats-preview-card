@@ -1,23 +1,23 @@
 .card {
     background-color: $darkDesaturatedBlue;
-    max-width: 327px;
+    max-width: 20.4375rem;
     text-align: center;
     border-radius: 8px;
     overflow: hidden;
 
     @include breakpoint-up(large) {
         display: flex;
-        max-width: 1110px;
+        max-width: 69.375rem;
         text-align: left;
     }
 
     &__img {
         position: relative;
         background-color: $softViolet;
-        min-height: 240px;
-        margin-bottom: 40px;
+        min-height: 15rem;
+        margin-bottom: 2.5rem;
         @include breakpoint-up(large) {
-            min-width: 540px;
+            min-width: 33.75rem;
             margin-bottom: 0;
             order: 2;
         }
@@ -40,38 +40,38 @@
     }
 
     &__info {
-        margin: 40px 32px 32px 32px;
+        margin: 2.5rem 2rem 2rem 2rem;
         @include breakpoint-up(large) {
             order: 1;
-            margin: 72px 95px 59px 72px;
+            margin: 4.5rem 5.9375rem 3.6875rem 4.5rem;
         }
     }
 
     &__headline {
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 700;
         color: $white;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         span {
             color: $softViolet;
         }
 
         @include breakpoint-up(large) {
-            font-size: 36px;
-            margin-bottom: 25px;
-            line-height: 44px;
+            font-size: 2.25rem;
+            margin-bottom: 1.5625rem;
+            line-height: 2.75rem;
         }
     }
 
     &__text {
         color: $slightlyTransparentWhite;
-        font-size: 15px;
-        margin-bottom: 40px;
-        line-height: 25px;
+        font-size: 0.9375rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.5625rem;
 
         @include breakpoint-up(large) {
-            margin-bottom: 72px;
-            margin-right: 30px;
+            margin-bottom: 4.5rem;
+            margin-right: 1.875rem;
         }
     }
 
@@ -85,11 +85,11 @@
 
     &__stat {
         &:not(:last-of-type) {
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
         }
 
         @include breakpoint-up(large) {
-            margin-right: 61px;
+            margin-right: 3.8125rem;
             &:not(:last-of-type) {
                 margin-bottom: 0;
             }
@@ -97,18 +97,19 @@
     }
 
     &__statNum {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
-        line-height: 30px;
+        line-height: 1.875rem;
     }
     &__statHeading {
         color: $slightlyMoreTransparentWhite;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 400;
-        line-height: 26px;
+        line-height: 1.625rem;
         text-transform: uppercase;
         @include breakpoint-up(large) {
             font-family: "Lexend Deca", sans-serif;
+            letter-spacing: 0.0625rem;
         }
     }
 }
