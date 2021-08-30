@@ -1,0 +1,74 @@
+.card {
+    background-color: $darkDesaturatedBlue;
+    max-width: 327px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &__img {
+        position: relative;
+        background-color: $softViolet;
+        min-height: 240px;
+        margin-bottom: 40px;
+
+        &::before {
+            content: "";
+            background-image: url(/images/image-header-mobile.jpg);
+            background-blend-mode: multiply;
+            background-color: $softViolet;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.75;
+        }
+    }
+
+    &__info {
+        margin: 40px 32px 32px 32px;
+    }
+
+    &__headline {
+        font-size: 28px;
+        font-weight: 700;
+        color: $white;
+        padding-bottom: 16px;
+        span {
+            color: $softViolet;
+        }
+    }
+
+    &__text {
+        color: $slightlyTransparentWhite;
+        font-size: 15px;
+        padding-bottom: 40px;
+        line-height: 25px;
+    }
+
+    &__stats {
+        color: $white;
+    }
+
+    &__stat {
+        &:not(:last-of-type) {
+            padding-bottom: 24px;
+        }
+    }
+
+    &__statNum {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    &__statHeading {
+        color: $slightlyMoreTransparentWhite;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+}

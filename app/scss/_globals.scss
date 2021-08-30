@@ -10,5 +10,14 @@ html {
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $veryDarkBlue;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    margin: 88px 24px;
 }
